@@ -46,14 +46,11 @@ def main():
                                     f"Duration: {duration}\n" \
                                     f"Trip Type: {type_of_trip}"
 
-                try:
-                    # Generate the travel itinerary using the AI model
-                    response = generate_travel_plan(model_name, user_preferences)
-                    st.success("Travel Itinerary Generated!")
-                    st.write(response)
-                except Exception as e:
-                     st.error("An error occurred. Please try again.")
-                     st.write(e)
+
+                response = generate_travel_plan(model_name, user_preferences)
+                st.success("Travel Itinerary Generated!")
+                st.write(response)
+                
         else:
             st.warning("Please fill in all the required fields.")
 
