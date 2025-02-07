@@ -1,6 +1,5 @@
-AI-Powered Virtual Travel Guide - Kolhapur Itinerary
 
-# AI-Powered Virtual Travel Guide - Kolhapur Itinerary
+# AI-Powered Virtual Travel Guide 
 
 ## Overview
 This project generates AI-powered travel itineraries based on user preferences like destination, budget, duration, and activities.
