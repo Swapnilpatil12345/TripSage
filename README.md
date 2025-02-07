@@ -2,7 +2,8 @@
 # TripSage - AI-Powered Virtual Travel Guide 
 
 ### Overview
-This project generates AI-powered travel itineraries based on user preferences like destination, budget, duration, and activities.
+
+This project generates AI-powered planned schedule or outline of a journey, including details like destinations, activities, accommodations, and timings. It's commonly used for travel planning. based on user preferences.
 
 ### 🏞️ Sample Travel Itinerary - Kolhapur
 
