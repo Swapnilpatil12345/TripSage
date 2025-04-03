@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": "../GenAi"
+	},
+	{
+		"path": "."
+	},
+	{
+		"path": "../demo"
+	}
+],
+  "settings": {}
+}

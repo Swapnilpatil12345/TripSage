@@ -27,7 +27,7 @@ def main():
     st.title("AI-Powered Virtual Travel Guide")
 
     # Model selection (optional if you want to give flexibility)
-    model_name = "gemini-pro"
+    model_name = "gemini-1.5-flash"
 
     # User input fields for travel preferences
     destination = st.text_input("Enter your destination:")
@@ -40,11 +40,15 @@ def main():
         if destination and activities and budget and duration:
             with st.spinner("Generating your travel plan..."):
                 # Construct the user preferences for the AI
-                user_preferences = f"Destination: {destination}\n" \
-                                    f"Activities: {activities}\n" \
-                                    f"Budget: {budget}\n" \
-                                    f"Duration: {duration}\n" \
-                                    f"Trip Type: {type_of_trip}"
+                user_preferences = f"""You are an AI travel planner. Generate a detailed travel itinerary based on the following details:
+                                        Destination: {destination}
+                                        Activities: {activities}
+                                        Budget: {budget}
+                                        Duration: {duration}
+                                        Trip Type: {type_of_trip}
+
+                                        Make sure to include recommendations for accommodation, dining, and must-visit places. use tables, visuals wherever necessary, 
+                                        language should be friendly like you are recommending to your friend, also you can add little details about that place, it is historical place then tell its significance in short"""
                 
                 try:
                     # Generate the travel itinerary using the AI model
